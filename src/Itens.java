@@ -1,25 +1,25 @@
 /*
-    Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+    Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
     Todos os direitos reservados.
     Universidade Federal de Campina Grande.
 */
 
 /**
- * Implementação da classe Itens, os itens são representados
+ * Implementacao da classe Itens, os itens sao representados
  * em uma matriz com o mesmo tamanho do tabuleiro e colocados
- * randomicamente. Na classe tabuleiro eles são interpretados
+ * randomicamente. Na classe tabuleiro eles sao interpretados
  * para jogo.
  * <BR>
- * Segue abaixo a lista dos códigos dos itens:
+ * Segue abaixo a lista dos codigos dos itens:
  * <BR>
  * 0 = Mais uma bomba para o personagem<BR>
- * 1 = Aumenta força das bombas do personagem<BR>
+ * 1 = Aumenta forca das bombas do personagem<BR>
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -32,7 +32,7 @@ public class Itens {
   /**
    * Cria uma nova matriz de itens baseado na do tabuleiro
    * passado como parametro
-   * @param t Tabuleiro a ser interpretado para geração de itens
+   * @param t Tabuleiro a ser interpretado para geracao de itens
    */
   public Itens(Tabuleiro t) {
     this.mat = new int[t.getNumeroLinhas()][t.getNumeroColunas()];
@@ -51,10 +51,10 @@ public class Itens {
 
   /*
      Aloca randomicamente os itens na matriz, existe uma probabilidade
-     de 10% de um item ser colocado a cada interação como também o item
-     a ser colocado é randômico. Assim garantimos sempre uma certa
-     quantidade de itens no tabuleiro em posições diferentes e que os
-     itens também variem.
+     de 10% de um item ser colocado a cada interacao como tambem o item
+     a ser colocado e randomico. Assim garantimos sempre uma certa
+     quantidade de itens no tabuleiro em posicoes diferentes e que os
+     itens tambem variem.
    */
   private void alocaItens(Tabuleiro t) {
     for (int i = 0; i < mat.length; i++) {
@@ -72,7 +72,7 @@ public class Itens {
 
   /**
    * Cria um item (portal) que permite a passagem de fase.
-   * @param t Tabuleiro que receberá o portal
+   * @param t Tabuleiro que recebera o portal
    */
   public void criaPortal(Tabuleiro t) {
     int linha, coluna;
@@ -85,7 +85,7 @@ public class Itens {
   }
 
   /**
-   * Diz se tem um portal na posição indicada
+   * Diz se tem um portal na posicao indicada
    * @param linha Linha
    * @param coluna Coluna
    * @return true caso tenha um portal
@@ -95,10 +95,10 @@ public class Itens {
   }
 
   /**
-   * Verifica se existe um item em uma determinada posição da matriz.
+   * Verifica se existe um item em uma determinada posicao da matriz.
    * @param linha Linha
    * @param coluna Coluna
-   * @return O código do item correspodente, caso não tenha algum retorna -1
+   * @return O codigo do item correspodente, caso nao tenha algum retorna -1
    */
   public int getItem(int linha, int coluna) {
     return mat[linha][coluna];

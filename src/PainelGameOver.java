@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -11,12 +11,12 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * Implementação da classe PainelGameOver. Este painel é mostrado
+ * Implementacao da classe PainelGameOver. Este painel e mostrado
  * quando acabam-se as vidas do jogador.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -55,8 +55,8 @@ public class PainelGameOver extends JPanel implements KeyListener {
   public void keyReleased(KeyEvent event) { }
 
   /**
-   * Utiliza o gráfico para desenhar no painel
-   * @param g Gráfico que será desenhado no painel
+   * Utiliza o grafico para desenhar no painel
+   * @param g Grafico que sera desenhado no painel
    */
   public void paintComponent(Graphics g) {
     super.paintComponent(g);

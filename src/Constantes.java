@@ -1,19 +1,19 @@
 /*
-    Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+    Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
     Todos os direitos reservados.
     Universidade Federal de Campina Grande.
 */
 /**
- * Interface que contém os atributos constantes utilizadas
- * para se saber informações sobre a parte gráfica com a qual o jogo
- * esta relacionado. Deependendo da interface que será utilizadas os
+ * Interface que contem os atributos constantes utilizadas
+ * para se saber informacoes sobre a parte grafica com a qual o jogo
+ * esta relacionado. Deependendo da interface que sera utilizadas os
  * valores se alteram.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0

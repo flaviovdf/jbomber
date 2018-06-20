@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -10,9 +10,9 @@ import java.util.*;
 /**
  *Classe que implementa o comportamento dos Inimigos 
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -30,7 +30,7 @@ public class Inimigo extends Personagem {
    * Cria um inimigo
    * @param left Coordenada-x do inimigo
    * @param top Coordenada-y do inimigo
-   * @param direcao Direçao inicial do jogador
+   * @param direcao Direcao inicial do jogador
    * @param listener Objeto que trata os eventos do personagem
    */
   public Inimigo(int left, int top, int direcao, PersonagemListener listener) {
@@ -46,8 +46,8 @@ public class Inimigo extends Personagem {
   }
 
   /**
-   * Altera a posicao do inimigo se for possível
-   * @param podeAndar Se ele pode andar na direçao atual
+   * Altera a posicao do inimigo se for possivel
+   * @param podeAndar Se ele pode andar na direcao atual
    */
   public void anda(boolean podeAndar) {
     if (podeAndar) {
@@ -70,16 +70,16 @@ public class Inimigo extends Personagem {
   }
 
   /**
-   * Altera a direçao do inimigo.
-   * @param valor O novo valor da direçao
+   * Altera a direcao do inimigo.
+   * @param valor O novo valor da direcao
    */
   public void setDirecao(int valor) {
     direcao = valor;
   }
 
   /**
-   * Retorna o valor da direção
-   * @return Valor da direção
+   * Retorna o valor da direcao
+   * @return Valor da direcao
    */
   public int getDirecao() {
     // retorna 1, 2, 4 ou 8
@@ -87,8 +87,8 @@ public class Inimigo extends Personagem {
   }
 
   /**
-   * Solta (ou não) uma bomba
-   * @return Se irá soltar ou nao (Probabilidade: 1/1000)
+   * Solta (ou nao) uma bomba
+   * @return Se ira soltar ou nao (Probabilidade: 1/1000)
    */
   public boolean lancaBomba() {
     return (int)(Math.random() * 2000) == 0;

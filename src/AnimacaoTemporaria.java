@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -9,9 +9,9 @@ import java.awt.Graphics;
 
 import javax.swing.*;
  /**  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -24,18 +24,18 @@ public class AnimacaoTemporaria extends Animacao {
   private boolean ativo = false;
 
   /**
-   * Cria uma animação que é marcada como excluída depois de ser reproduzida
+   * Cria uma animacao que e marcada como excluida depois de ser reproduzida
    * "tempoDeVida" vezes.
    * @param sprites Fonte de imagens
-   * @param left Coordenada-x da animação
-   * @param top Coordenada-y da animação
-   * @param delay Número de clocks (chamada do evento do Timer) necessários para
+   * @param left Coordenada-x da animacao
+   * @param top Coordenada-y da animacao
+   * @param delay Numero de clocks (chamada do evento do Timer) necessarios para
    * mudar a imagem
-   * @param tempoDeVida Número de vezes que a animação será reproduzida
+   * @param tempoDeVida Numero de vezes que a animacao sera reproduzida
    */
   public AnimacaoTemporaria(Sprite sprites, int left, int top, int delay, int tempoDeVida) {
     super(sprites, delay);
-    // configura as opções inicias
+    // configura as opcoes inicias
     setLeft(left);
     setTop(top);
     setTempoDeVida(tempoDeVida);
@@ -58,33 +58,33 @@ public class AnimacaoTemporaria extends Animacao {
   }
 
   /**
-   * Configura um tempo de vida para a animação.
-   * @param valor O número de vezes a a animacao corrente será reproduzida
-   * até ser marcada como excluída
+   * Configura um tempo de vida para a animacao.
+   * @param valor O numero de vezes a a animacao corrente sera reproduzida
+   * ate ser marcada como excluida
    */
   public void setTempoDeVida(int valor) {
     tempoDeVida = (Math.abs(valor) > 0 ? Math.abs(valor) : 1);
   }
 
   /**
-   * Retorna a coordenada da lateral esquerda da animação.
-   * @return Cooredenada-x da animação
+   * Retorna a coordenada da lateral esquerda da animacao.
+   * @return Cooredenada-x da animacao
    */
   public int getLeft() {
     return left;
   }
 
   /**
-   * Retorna a coordenada do topo da animação.
-   * @return Cooredenada-y da animação
+   * Retorna a coordenada do topo da animacao.
+   * @return Cooredenada-y da animacao
    */
   public int getTop() {
     return top;
   }
 
   /**
-   * Torna ativa a reprodução da animação.
-   * @return Referência para o objeto
+   * Torna ativa a reproducao da animacao.
+   * @return Referencia para o objeto
    */
   public Object ativar() {
     ativo = true;
@@ -92,24 +92,24 @@ public class AnimacaoTemporaria extends Animacao {
   }
 
   /**
-   * Pára a reprodução da animação.
+   * Para a reproducao da animacao.
    */
   public void desativar() {
     ativo = false;
   }
 
   /**
-   * Informa se a animação está em modo de reprodução.
-   * @return Retorna true caso a animação esteja em modo de reprodução
+   * Informa se a animacao esta em modo de reproducao.
+   * @return Retorna true caso a animacao esteja em modo de reproducao
    */
   public boolean isAtivo() {
     return ativo;
   }
 
   /**
-   * Desenha o frame selecionado da animação.
+   * Desenha o frame selecionado da animacao.
    * @param destino Painel de destino
-   * @param g Gráfico que desenhará a animação
+   * @param g Grafico que desenhara a animacao
    */
   public boolean desenha(JPanel p, Graphics g) {
     super.desenha(p, g, left, top);

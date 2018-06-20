@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-	proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+	proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -12,9 +12,9 @@ import junit.framework.*;
  * Testes Automaticos para a classe Tempo
  * 
  * @author Felipe Ribeiro
- * @author Flávio Roberto
- * @author Flávio Vinicius
- * @author João Arthur
+ * @author Flavio Roberto
+ * @author Flavio Vinicius
+ * @author Joao Arthur
  * @author Thiago Emmanuel
  * @author Vinicius Ferraz
  * @version 1.0
@@ -40,7 +40,7 @@ public class TesteTempo extends TestCase{
 	}
 
 	/**
-	 * Testa a representação do conteudo do objeto em forma de String
+	 * Testa a representacao do conteudo do objeto em forma de String
 	 */
 	public void testMostraTempo(){
 
@@ -49,11 +49,11 @@ public class TesteTempo extends TestCase{
 
 
 	/**
-	 * Testa a mudança de tempo
+	 * Testa a mudanca de tempo
 	 */
 	 public void testAjustaTempo(){
 
-		 //força  a passagem de 1 segundo
+		 //forca  a passagem de 1 segundo
 		for (int i=0;i<=40;i++){
 		 	relogio.ajustaTempo();
 		}
@@ -61,7 +61,7 @@ public class TesteTempo extends TestCase{
 		assertEquals ("4:59",relogio.toString());
 
 	 	relogio.reiniciar(241,25);
-	 	 //força  a passagem de 1 segundo
+	 	 //forca  a passagem de 1 segundo
 		for (int i=0;i<=40;i++){
 		 	relogio.ajustaTempo();
 		}
@@ -69,12 +69,12 @@ public class TesteTempo extends TestCase{
 
 
 	 	relogio.reiniciar(1,25);
-	 	 //força  a passagem de 1 segundo
+	 	 //forca  a passagem de 1 segundo
 		for (int i=0;i<=40;i++){
 		 	relogio.ajustaTempo();
 		}
 	 	assertEquals ("0:00",relogio.toString());
-                 //força  a passagem de 1 segundo
+                 //forca  a passagem de 1 segundo
                for (int i=0;i<=40;i++){
                         relogio.ajustaTempo();
                }
@@ -82,7 +82,7 @@ public class TesteTempo extends TestCase{
 	 }
 
 	/**
-	 * Testa a reinicialização do relogio
+	 * Testa a reinicializacao do relogio
 	 */
 	 public void testReiniciar(){
 

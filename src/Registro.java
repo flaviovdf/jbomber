@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -8,12 +8,12 @@
 import java.io.*;
 
 /**
- * Implementação da classe registro. O registro é como as
- * informações dos recordes são armazenadas.
+ * Implementacao da classe registro. O registro e como as
+ * informacoes dos recordes sao armazenadas.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -43,8 +43,8 @@ public class Registro implements Comparable, Serializable {
   }
 
   /**
-   * Retorna a pontuação do registro
-   * @return A pontuação
+   * Retorna a pontuacao do registro
+   * @return A pontuacao
    */
   public int getPontuacao() {
     return pontos;
@@ -52,8 +52,8 @@ public class Registro implements Comparable, Serializable {
 
   /**
    * Compara o registro com outro objeto.
-   * @return -1 caso o outro objeto tenha pontuação maior, 1 caso seja menor
-   * e 0 se tiverem mesma pontuação.
+   * @return -1 caso o outro objeto tenha pontuacao maior, 1 caso seja menor
+   * e 0 se tiverem mesma pontuacao.
    */
   public int compareTo(Object o) {
     Registro aux = (Registro)o;

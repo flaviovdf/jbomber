@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -13,9 +13,9 @@ import javax.swing.*;
 /**
  *  Classe de componentes do jogo que se mexem pelo tabuleiro
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -29,10 +29,10 @@ public class Animacao {
       espaco = 0, delay;
 
   /**
-   * Cria uma animação.
-   * e um tempo de vida pré-definido.
-   * @param sprites Sprites da animação
-   * @param delay Número de clocks (chamada do evento do Timer) necessários para
+   * Cria uma animacao.
+   * e um tempo de vida pre-definido.
+   * @param sprites Sprites da animacao
+   * @param delay Numero de clocks (chamada do evento do Timer) necessarios para
    * mudar a imagem
    */
   public Animacao(Sprite sprites, int delay) {
@@ -41,7 +41,7 @@ public class Animacao {
   }
 
   /**
-   * Altera o número de clocks necessários para a mudanca de imagens.
+   * Altera o numero de clocks necessarios para a mudanca de imagens.
    * @param valor Valor do clock
    */
   public void setDelay(int valor) {
@@ -73,8 +73,8 @@ public class Animacao {
 
   /**
    * Passa para o proximo frame.
-   * ATENÇÃO: O frame somente é avançado se o número de clocks necessários para
-   * a mudança for atingido.
+   * ATENCAO: O frame somente e avancado se o numero de clocks necessarios para
+   * a mudanca for atingido.
    * @return Retorna true caso haja realmente a troca do frame
    */
   public boolean avancaFrame() {
@@ -87,8 +87,8 @@ public class Animacao {
   }
 
   /**
-   * Altera o valor da animação corrente.
-   * @param valor Novo valor da animação corrente
+   * Altera o valor da animacao corrente.
+   * @param valor Novo valor da animacao corrente
    */
   public void setAnimacao(int valor) {
     if (valor != animacaoCorrente && Math.abs(valor) < sprites.getNumeroDeAnimacoes()) {
@@ -98,19 +98,19 @@ public class Animacao {
   }
 
   /**
-   * Retorna o número da animação corrente.
-   * @return Número da animação corrente
+   * Retorna o numero da animacao corrente.
+   * @return Numero da animacao corrente
    */
   public int getAnimacaoCorrente() {
     return animacaoCorrente;
   }
 
   /**
-   * Desenha o frame selecionado da animação.
+   * Desenha o frame selecionado da animacao.
    * @param p Painel de destino
-   * @param g Gráfico que desenhará a animação
-   * @param left Coordenada-x da animação
-   * @param top Coordenada-y da animação
+   * @param g Grafico que desenhara a animacao
+   * @param left Coordenada-x da animacao
+   * @param top Coordenada-y da animacao
    */
   public void desenha(JPanel p, Graphics g, int left, int top) {
     sprites.getImageIcon(animacaoCorrente, frame).paintIcon(p, g, left, top);

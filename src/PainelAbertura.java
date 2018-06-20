@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -12,12 +12,12 @@ import java.io.*;
 import javax.swing.*;
 
 /**
- * Implementação do painel de abertura. O painel de abertura é a
- * interface de comunicação inicial entre o usuário e o jogo.
+ * Implementacao do painel de abertura. O painel de abertura e a
+ * interface de comunicacao inicial entre o usuario e o jogo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -53,8 +53,8 @@ public class PainelAbertura extends JPanel implements KeyListener {
   }
 
   /**
-   * Utiliza o gráfico para desenhar no painel
-   * @param g Gráfico que será desenhado no painel
+   * Utiliza o grafico para desenhar no painel
+   * @param g Grafico que sera desenhado no painel
    */
   public void paintComponent(Graphics g) {
     super.paintComponent(g);

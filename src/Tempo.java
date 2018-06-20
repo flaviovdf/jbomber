@@ -1,17 +1,17 @@
 /*
-    Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+    Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
     Todos os direitos reservados.
     Universidade Federal de Campina Grande.
 */
 /**
- * Implementação da classe Tempo, ela simula a idéia de um
+ * Implementacao da classe Tempo, ela simula a ideia de um
  * contador com o tempo decaindo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -24,9 +24,9 @@ public class Tempo {
       espaco = 0, delay;
 
   /**
-   * Constroi um novo contador com o número de segundos especificado
+   * Constroi um novo contador com o numero de segundos especificado
    * @param segundos O tempo total do contador
-   * @param delay Milisegundos até o próximo clock
+   * @param delay Milisegundos ate o proximo clock
    */
   public Tempo(int segundos, int delay) {
     reiniciar(segundos, delay);
@@ -48,7 +48,7 @@ public class Tempo {
   /**
    * Reinicia o contador com novo tempo inicial e delay
    * @param segundos O tempo total do contador
-   * @param delay Milisegundos até o próximo clock
+   * @param delay Milisegundos ate o proximo clock
    */
   public void reiniciar(int segundos, int delay) {
     this.segundos = Math.abs(segundos);
@@ -56,8 +56,8 @@ public class Tempo {
   }
 
   /**
-   * Retorna a representação de Tempo numa string
-   * @return String com informações do tempo
+   * Retorna a representacao de Tempo numa string
+   * @return String com informacoes do tempo
    */
   public String toString() {
     return (segundos / 60) + ((segundos % 60) < 10 ? ":0" + (segundos % 60) : ":" + (segundos % 60));

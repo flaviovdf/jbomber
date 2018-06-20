@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -11,12 +11,12 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * Implementação do painel de recordes. Aqui são mostrados os
+ * Implementacao do painel de recordes. Aqui sao mostrados os
  * melhores placares do jogo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -58,8 +58,8 @@ public class PainelRecordes extends JPanel implements KeyListener {
   public void keyReleased(KeyEvent event) { }
 
   /**
-   * Utiliza o gráfico para desenhar no painel
-   * @param g Gráfico que será desenhado no painel
+   * Utiliza o grafico para desenhar no painel
+   * @param g Grafico que sera desenhado no painel
    */
   public void paintComponent (Graphics g) {
     super.paintComponent(g);
@@ -76,11 +76,11 @@ public class PainelRecordes extends JPanel implements KeyListener {
     // imprime o nome dos recordistas
     if (melhores != null) {
       for (int i = 0; i < melhores.length; i++) {
-        g.drawString( (i + 1) + "º) " + melhores[i].getNome(), 10, 100 + i * 10);
+        g.drawString( (i + 1) + "o) " + melhores[i].getNome(), 10, 100 + i * 10);
         g.drawString("( " + melhores[i].getPontuacao() + " )", 100, 100 + i * 10);
       }
     } else {
-      g.drawString("A lista está vazia!", 10, 100);
+      g.drawString("A lista esta vazia!", 10, 100);
     }
     // intrucao para usuario
     g.drawString("Pressione [ENTER] para retornar!", 25, 220);

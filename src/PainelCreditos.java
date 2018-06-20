@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -11,12 +11,12 @@ import java.awt.event.*;
 import javax.swing.*;
 
 /**
- * Implementação do painel de créditos. O painel de créditos é onde
- * será mostrada as informações dos desenvolvedores do jogo.
+ * Implementacao do painel de creditos. O painel de creditos e onde
+ * sera mostrada as informacoes dos desenvolvedores do jogo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -55,8 +55,8 @@ public class PainelCreditos extends JPanel implements KeyListener {
   public void keyReleased(KeyEvent event) { }
 
   /**
-   * Utiliza o gráfico para desenhar no painel
-   * @param g Gráfico que será desenhado no painel
+   * Utiliza o grafico para desenhar no painel
+   * @param g Grafico que sera desenhado no painel
    */
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
@@ -65,15 +65,15 @@ public class PainelCreditos extends JPanel implements KeyListener {
     animFundo.desenha(this, g, 0, 0);
     // array de autores
     String[] autores = {
-        "Felipe Ribeiro (felipe@amedia.com.br)", "Flávio Roberto (flavio@zona7.com.br)",
-        "Flávio Vinicius (flaviovdf@uol.com.br)", "João Arthur (jota_arthur@hotmail.com)",
+        "Felipe Ribeiro (felipe@amedia.com.br)", "Flavio Roberto (flavio@zona7.com.br)",
+        "Flavio Vinicius (flaviovdf@uol.com.br)", "Joao Arthur (jota_arthur@hotmail.com)",
         "Thiago Emmanuel (thiago-manel@ig.com.br)", "Vinicius Ferraz (snoopy_ferraz@hotmail.com)" };
 
     // configura cor e fonte
     g.setColor(Color.YELLOW);
     g.setFont(new Font("Tahoma", Font.BOLD, 24));
     // imprime cabecalho do JPanel
-    g.drawString("CRÉDITOS", 100, 30);
+    g.drawString("CREDITOS", 100, 30);
     // reconfigura fonte
     g.setFont(new Font("Tahoma", Font.BOLD, 10));
     // imprime os nomes dos autores

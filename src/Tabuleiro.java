@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -11,11 +11,11 @@ import java.io.FileReader;
 import java.util.Iterator;
 import java.util.Vector;
 /**
- * Classe que implementa o Tabuleiro para execução do jogo
+ * Classe que implementa o Tabuleiro para execucao do jogo
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -36,7 +36,7 @@ public class Tabuleiro implements Constantes {
   /**
    * Cria um tabuleiro logico para o jogo
    * @param j O jogador do jogo
-   * @param numeroFase Número da fase que o tabuleiro representará
+   * @param numeroFase Numero da fase que o tabuleiro representara
    * @param listener Tratador de eventos dos personagens
    */
   public Tabuleiro(Jogador j, int numeroFase, PersonagemListener listener) {
@@ -168,7 +168,7 @@ public class Tabuleiro implements Constantes {
    * Confere se o termo no tabuleiro esta livre
    * @param linha Linha
    * @param coluna Coluna
-   * @return true caso a posição esteja livre
+   * @return true caso a posicao esteja livre
    */
   public boolean estaLivre(int linha, int coluna) {
     return matriz[linha][coluna] == LIVRE;
@@ -187,7 +187,7 @@ public class Tabuleiro implements Constantes {
 
   /**
    * Insere uma bomba na matriz e no vetor de Personagem.
-   * @param p Personagem que terá uma bomba adicionada
+   * @param p Personagem que tera uma bomba adicionada
    * @param linha Linha
    * @param coluna Coluna
    */
@@ -205,7 +205,7 @@ public class Tabuleiro implements Constantes {
   }
 
   /**
-   * Método que retorna um iterator para o vetor de inimigos
+   * Metodo que retorna um iterator para o vetor de inimigos
    * @return Um iterator para inimigos
    */
   public Iterator iteratorDeInimigos() {

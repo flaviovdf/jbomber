@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-	proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+	proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -14,9 +14,9 @@ import junit.framework.TestCase;
  * Testes Automaticos para a classe Sprite
  *
  * @author Felipe Ribeiro
- * @author Flávio Roberto
- * @author Flávio Vinicius
- * @author João Arthur
+ * @author Flavio Roberto
+ * @author Flavio Vinicius
+ * @author Joao Arthur
  * @author Thiago Emmanuel
  * @author Vinicius Ferraz
  * @version 1.0
@@ -47,7 +47,7 @@ public class TesteSprite extends TestCase{
 	}
 
         /*
-         *testa o lançamento da exceção do metodo que
+         *testa o lancamento da excecao do metodo que
          *carrega as imagens
          */
         public void testCarregaImagens(){
@@ -57,7 +57,7 @@ public class TesteSprite extends TestCase{
                 try{
 
                         outroSprite = new Sprite ("inimigos/arquivoInexistente/", "4:4:4:4");
-                        fail ("Deveria ocorre uma exceção");
+                        fail ("Deveria ocorre uma excecao");
                 }catch (FileNotFoundException e) {
 
               }

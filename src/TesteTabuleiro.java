@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-	proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+	proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -13,9 +13,9 @@ import java.util.EventObject;
  * Testes Automaticos para a classe Tabuleiro
  *
  * @author Felipe Ribeiro
- * @author Flávio Roberto
- * @author Flávio Vinicius
- * @author João Arthur
+ * @author Flavio Roberto
+ * @author Flavio Vinicius
+ * @author Joao Arthur
  * @author Thiago Emmanuel
  * @author Vinicius Ferraz
  * @version 1.0

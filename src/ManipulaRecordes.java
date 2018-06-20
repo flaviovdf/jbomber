@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -9,12 +9,12 @@ import java.util.Arrays;
 import java.io.*;
 
 /**
- * Implementação da manipulação de arquivos necessárias para se gravar
+ * Implementacao da manipulacao de arquivos necessarias para se gravar
  * os recordes do jogo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -25,7 +25,7 @@ public class ManipulaRecordes {
   private static final String NOME_ARQUIVO = "recordes.dat";
 
   /**
-   * Verifica se o arquivo já foi criado
+   * Verifica se o arquivo ja foi criado
    * @return true caso ja exista o arquivo
    */
   public static boolean existeArquivo() {
@@ -47,7 +47,7 @@ public class ManipulaRecordes {
 
     try {
       out = new ObjectOutputStream(new FileOutputStream(NOME_ARQUIVO));
-      // inicializa todas as posições com jogadores
+      // inicializa todas as posicoes com jogadores
       Registro[] conteudo = new Registro[10];
       for (int i = 0; i < conteudo.length; i++) {
         conteudo[i] = new Registro("[vazio]", 0);
@@ -61,7 +61,7 @@ public class ManipulaRecordes {
   }
 
   /**
-   * Adiciona um registro ao conteudo e depois chama o método gravaNoArquivo()
+   * Adiciona um registro ao conteudo e depois chama o metodo gravaNoArquivo()
    * @param nome Nome do jogador
    * @param pontos Pontos do jogador
    */
@@ -89,7 +89,7 @@ public class ManipulaRecordes {
     } catch (Exception e) { }
   }
 
-  // grava o conteúdo em disco
+  // grava o conteudo em disco
   private static void gravaNoArquivo(Registro[] conteudo) {
     ObjectOutputStream out;
 
@@ -104,7 +104,7 @@ public class ManipulaRecordes {
   }
 
   /**
-   * Lê conteúdo gravado em disco.
+   * Le conteudo gravado em disco.
    * @return Um array de registros
    */
   public static Registro[] getRecordes() {

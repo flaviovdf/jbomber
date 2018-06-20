@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -12,9 +12,9 @@ import javax.swing.*;
 /**
  * Classe de componentes do jogo que se mexem pelo tabuleiro.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -25,10 +25,10 @@ public class AnimacaoPersonagem extends Animacao {
   private Personagem personagem;
 
   /**
-   * Cria uma associação entre um personagem e uma interface gráfica
-   * @param p Personagem que terá interface
-   * @param sprites Sprites da animação
-   * @param delay Número de clocks (chamada do evento do Timer) necessários para
+   * Cria uma associacao entre um personagem e uma interface grafica
+   * @param p Personagem que tera interface
+   * @param sprites Sprites da animacao
+   * @param delay Numero de clocks (chamada do evento do Timer) necessarios para
    * mudar a imagem
    */
   public AnimacaoPersonagem(Personagem p, Sprite sprites, int delay) {
@@ -46,9 +46,9 @@ public class AnimacaoPersonagem extends Animacao {
   }
 
   /**
-   * Desenha o frame selecionado da animação.
+   * Desenha o frame selecionado da animacao.
    * @param destino Painel de destino
-   * @param g Gráfico que desenhará a animação
+   * @param g Grafico que desenhara a animacao
    */
   public void desenha(JPanel p, Graphics g) {
     super.desenha(p, g, personagem.getLeft(), personagem.getTop());

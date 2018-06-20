@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -8,16 +8,16 @@
 import java.util.*;
 
 /**
- * Classe abstrata personagem, esta classe será utilizada para a
- * implementação dos inimigos e do jogador. Aqui é implementado
- * a funcionalidade dos personagens como o número de bombas e tamanho
- * da explosão. Os atributos left e top são respectivamente a posição
+ * Classe abstrata personagem, esta classe sera utilizada para a
+ * implementacao dos inimigos e do jogador. Aqui e implementado
+ * a funcionalidade dos personagens como o numero de bombas e tamanho
+ * da explosao. Os atributos left e top sao respectivamente a posicao
  * mais a esquerda e a mais acima da imagem.
  *
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -87,23 +87,23 @@ public abstract class Personagem {
   }
 
   /**
-   * Retorna o número de bombas soltas pelo Personagem
-   * @return Número de bombas
+   * Retorna o numero de bombas soltas pelo Personagem
+   * @return Numero de bombas
    */
   public int getBombasSoltas() {
     return bombas.size();
   }
 
   /**
-   * Incrementa em 1 (um) o número de bombas que o personagem pode soltar
+   * Incrementa em 1 (um) o numero de bombas que o personagem pode soltar
    */
   public void aumentaMaxBombas() {
     maxBombas++;
   }
 
   /**
-   * Retorna o número máximo de bombas que o personagem pode soltar
-   * @return O máximo de bombas que podem ser soltas
+   * Retorna o numero maximo de bombas que o personagem pode soltar
+   * @return O maximo de bombas que podem ser soltas
    */
   public int getMaxBombas() {
     return maxBombas;
@@ -117,16 +117,16 @@ public abstract class Personagem {
   }
 
   /**
-   * Retorna o tamanho da explosão.
-   * @return Tamanho da explosão
+   * Retorna o tamanho da explosao.
+   * @return Tamanho da explosao
    */
   public int getTamanhoDaExplosao() {
     return tamanhoDaExplosao;
   }
 
   /**
-   * Retorna a última bomba colocada pelo personagem.
-   * @return Última bomba colocada pelo personagem
+   * Retorna a ultima bomba colocada pelo personagem.
+   * @return Ultima bomba colocada pelo personagem
    */
   public Object getUltimaBomba() {
     return bombas.lastElement();

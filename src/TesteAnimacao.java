@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-	proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+	proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -14,9 +14,9 @@ import junit.framework.*;
  * Testes Automaticos para as Animacoes
  *
  * @author Felipe Ribeiro
- * @author Flávio Roberto
- * @author Flávio Vinicius
- * @author João Arthur
+ * @author Flavio Roberto
+ * @author Flavio Vinicius
+ * @author Joao Arthur
  * @author Thiago Emmanuel
  * @author Vinicius Ferraz
  * @version 1.0
@@ -76,14 +76,14 @@ public class TesteAnimacao extends TestCase {
 		//imediata de frames
 		umaAnimacao.setDelay(1);
 
-		//testa o atributo frame, o atributo é setado no inicio como 0
+		//testa o atributo frame, o atributo e setado no inicio como 0
 		assertEquals(0,umaAnimacao.getFrame());
 
 		//testa a mudanca de frames,nesta animacao existem 4 frames no total
 		umaAnimacao.avancaFrame();
 		assertEquals (1,umaAnimacao.getFrame());
 
-		//realiza dois avanços
+		//realiza dois avancos
 		for (int i=0;i<=1;i++){
 			umaAnimacao.avancaFrame();
 		}
@@ -97,7 +97,7 @@ public class TesteAnimacao extends TestCase {
 
 		//seta o atributo delay em 2,para testar a mudanca
 		//nao imediata de frames, a mudanca deve ocorre a cada
-		//dois comandos de avanço
+		//dois comandos de avanco
 		umaAnimacao.setDelay(2);
 
 		for (int i=0;i<=1;i++){
@@ -145,7 +145,7 @@ public class TesteAnimacao extends TestCase {
 	     //muda de frames,nesta animacao existem 4 frames no total
 	     umaAnimacao.avancaFrame();
 	     outraAnimacao.setAnimacao(2);
-	     //quando ocorre a mudança de animacao, o frame atual
+	     //quando ocorre a mudanca de animacao, o frame atual
 	     //deve ser o 0
 	     assertEquals(0,outraAnimacao.getFrame());
 	 }

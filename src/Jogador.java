@@ -1,6 +1,6 @@
 /*
-    Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+    Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
     Todos os direitos reservados.
     Universidade Federal de Campina Grande.
@@ -11,9 +11,9 @@ import java.util.*;
 /**
  *  Classe de componentes do jogo que se mexem pelo tabuleiro
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -153,8 +153,8 @@ public class Jogador extends Personagem {
   }
 
   /**
-   * Altera a direcao do jogador. Se o valor entrado for positivo, este é inserido
-   * no byte "direcao". No caso de ser negativo, o valor é removido.
+   * Altera a direcao do jogador. Se o valor entrado for positivo, este e inserido
+   * no byte "direcao". No caso de ser negativo, o valor e removido.
    * @param valor Possibilidades: [1 = ESQUERDA, 2 = CIMA, 4 = DIREITA, 8 = BAIXO]
    */
   public void setDirecao(int valor) {
@@ -169,8 +169,8 @@ public class Jogador extends Personagem {
   }
 
   /**
-   * Retorna a direção do jogador.
-   * @return Valor correspondente a direção do jogador
+   * Retorna a direcao do jogador.
+   * @return Valor correspondente a direcao do jogador
    * [1 = ESQUERDA, 2 = CIMA, 4 = DIREITA, 8 = BAIXO]
    */
   public int getDirecao() {

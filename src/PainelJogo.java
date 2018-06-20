@@ -1,6 +1,6 @@
 /*
-	Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+	Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
 	Todos os direitos reservados.
 	Universidade Federal de Campina Grande.
@@ -15,11 +15,11 @@ import java.io.*;
 import javax.swing.*;
 
 /**
- * Implementação da interface gráfica (GUI) do jogo.
+ * Implementacao da interface grafica (GUI) do jogo.
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -117,7 +117,7 @@ public class PainelJogo extends JPanel implements Constantes, PersonagemListener
       for (int j = 3; j <= 9; j++) {
         java.net.URL aux = getClass().getResource("sprites/fogo/" + i + j + ".gif");
 //        if (aux == null) {
-//          throw new FileNotFoundException("O arquivo sprites/fogo/" + i + j + ".gif não foi encontrado!");
+//          throw new FileNotFoundException("O arquivo sprites/fogo/" + i + j + ".gif nao foi encontrado!");
 //        }
         explosao[i * 10 + j] = new ImageIcon("sprites/fogo/" + i + j + ".gif");
       }
@@ -140,7 +140,7 @@ public class PainelJogo extends JPanel implements Constantes, PersonagemListener
 
   /**
    * Trata o evento do Timer, ajustando o tempo do cronometro
-   * e reajustando posições.
+   * e reajustando posicoes.
    * @param event Objeto passado pelo evento
    */
   public void actionPerformed(ActionEvent event) {
@@ -152,9 +152,9 @@ public class PainelJogo extends JPanel implements Constantes, PersonagemListener
   }
 
   /**
-   * Roda a animação da morte dos personagens no local em que eles se situavam.
-   * Caso o personagem seja um inimigo, roda a animação da fumaça. Caso seja o jogador
-   * retira uma vida, e recarrega a fase ou se não tiver mais vidas, resulta no GameOver.
+   * Roda a animacao da morte dos personagens no local em que eles se situavam.
+   * Caso o personagem seja um inimigo, roda a animacao da fumaca. Caso seja o jogador
+   * retira uma vida, e recarrega a fase ou se nao tiver mais vidas, resulta no GameOver.
    * @param event Objeto passado pelo evento
    */
   public void personagemMorre(EventObject event) {
@@ -191,7 +191,7 @@ public class PainelJogo extends JPanel implements Constantes, PersonagemListener
   }
 
   /**
-   * Método que é executado quando o jogador passar de fase.
+   * Metodo que e executado quando o jogador passar de fase.
    * @param event Objeto passado pelo evento
    */
   public void jogadorPegaPortal(EventObject event) {
@@ -213,8 +213,8 @@ public class PainelJogo extends JPanel implements Constantes, PersonagemListener
   }
 
   /**
-   * Utiliza o gráfico para desenhar no painel
-   * @param g Gráfico que será desenhado no painel
+   * Utiliza o grafico para desenhar no painel
+   * @param g Grafico que sera desenhado no painel
    */
   public void paintComponent(Graphics g) {
     super.paintComponent(g);

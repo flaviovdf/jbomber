@@ -1,6 +1,6 @@
 /*
-    Esta classe é para uso exclusivamente acadêmico, é absolutamente
-  proibido a cópia total ou parcial de qualquer parte deste.
+    Esta classe e para uso exclusivamente academico, e absolutamente
+  proibido a copia total ou parcial de qualquer parte deste.
 
     Todos os direitos reservados.
     Universidade Federal de Campina Grande.
@@ -13,9 +13,9 @@ import java.util.EventObject;
 /**
  *  Classe do tabuleiro onde os componentes se mexem
  *  @author Felipe Ribeiro
- *  @author Flávio Roberto Santos
- *  @author Flávio Vinicius
- *  @author João Arthur
+ *  @author Flavio Roberto Santos
+ *  @author Flavio Vinicius
+ *  @author Joao Arthur
  *  @author Thiago Emmanuel
  *  @author Vinicius Ferraz
  *  @version 1.0
@@ -95,7 +95,7 @@ public class TesteJogador extends TestCase implements PersonagemListener {
   }
 
   /**
-   * Testa a adição de pontos
+   * Testa a adicao de pontos
    */
   public void testAddPontos() {
 
@@ -145,7 +145,7 @@ public class TesteJogador extends TestCase implements PersonagemListener {
   }
 
   /**
-   * Testa a adição de vidas
+   * Testa a adicao de vidas
    */
   public void testAddVidas() {
 
